@@ -10,6 +10,12 @@
 <body>
     <div class="container">
       <div class="row mb-4">
+        <div class="col-12 text-center ">
+  <a href="https://apeceg.com/" target="_blank" rel="noopener noreferrer"><img id="logo" src="https://i.ibb.co/DpXPBVg/274942399-5035765663149370-7964586463779466741-n-removebg-preview.png" width="10%" alt="APECLogo"> </a>
+ <a href="https://apeceg.com/"><img src="https://i.ibb.co/L03Kn6c/274555231-5018021661590437-4076577953871432271-n-removebg-preview.png" width="20%"alt="APEC"> </a>
+       </div>
+       </div>
+      <div class="row mb-4">
     <div class="col-12">
     <h2 style="color: #DDDDDD;" class="fs-3  text-center">APEC'25</h2>
      <h2 style="color: #AD0909;" class="fs-2  text-center">RECRUIMENT</h2>
@@ -19,18 +25,18 @@
     <div class="data col-12 border border-secondary-subtle p-5 ">
         <form>
             <div class="mb-4">
-              <label for="exampleInputEmail1" class="form-label text-start">Name:</label>
-              <input type="email" class="form-control bg-transparent" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label  class="form-label text-start">Name:</label>
+              <input type="text" class="form-control bg-transparent">
             </div>
             <div class="mb-4">
-              <label for="exampleInputPassword1" class="form-label">Mobile number:</label>
-              <input type="password" class="form-control bg-transparent" id="exampleInputPassword1">
+              <label class="form-label">Mobile number:</label>
+              <input type="number" class="form-control bg-transparent" >
             </div>
         
             <label class="form-label text-start" for="inputGroupSelect01">University:</label>
             <div class="input-group mb-3">
-                <select class="form-select bg-transparent" id="inputGroupSelect01">
-                  <option selected class="text-light">Choose University</option>
+                <select class="form-select bg-transparent" id="uni">
+                  <option selected>Choose University</option>
                   <option value="Cairo">Cairo</option>
                   <option value="Ain Shams">Ain Shams</option>
                   <option value="Helwan">Helwan</option>
@@ -38,7 +44,7 @@
               </div>
               <label class="form-label text-start" for="inputGroupSelect01">Faculty:</label>
               <div class="input-group mb-3">
-                  <select class="form-select bg-transparent" id="inputGroupSelect01">
+                  <select onchange="getVal()" class="form-select bg-transparent" id="fac">
                   <option selected >Choose Faculty</option>
                   <option value="Engineering">Engineering</option>
                   <option value="Medicine">Medicine</option>
@@ -46,20 +52,20 @@
                   <option value="Commerce">Commerce</option>
                   </select>
                 </div>
-                <label class="form-label text-start" for="inputGroupSelect01">Academic Year:</label>
+                <label class="form-label text-start" for="year">Academic Year:</label>
                   <div class="input-group mb-3">
-                    <select class="form-select bg-transparent" id="inputGroupSelect01" >
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                    <select class="form-select bg-transparent" id="year" >
+                      <option selected>Choose Year</option>
+                      
                     </select>
                   </div>
+                  <div id="program">
+
+                  </div>
            <div class="row"> 
-            <div class="col-5">
-            <button type="submit" class="btn w-100 btn-outline-dark my-button" >Back</button> 
-        </div>
-        <div class="col-5">
-            <button type="submit" class="btn w-100 btn-outline-dark my-button">Next</button> 
+            <div class="col-12 text-center">
+            <button type="submit" class="btn  w-35 btn-outline-dark my-button" >Back</button> 
+            <button type="submit" class="btn  btn-outline-dark my-button">Next</button> 
         </div>
         </div>
           </form>
